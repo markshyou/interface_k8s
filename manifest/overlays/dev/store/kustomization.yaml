@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomizationyaml
+resources:
+- store-deployment-patch.yaml
+- store-service-patch.yaml
+images:
+- name: ${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/store-app
+  newName: ${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/store-app
+  newTag: store-$(IMAGE_TAG)
+patchesStrategicMerge:
+- store-deployment-patch.yaml
+- store-service-patch.yaml

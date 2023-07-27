@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- user-deployment-patch.yaml
+- user-service-patch.yaml
+images:
+- name: ${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/user-app
+  newName: ${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/user-app
+  newTag: user-$(IMAGE_TAG)
+patchesStrategicMerge:
+- user-deployment-patch.yaml
+- user-service-patch.yaml
