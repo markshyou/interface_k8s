@@ -5,7 +5,13 @@ metadata:
   namespace: default
   labels:
     env: dev
-spec: 
+spec:
+  replicas: 3
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
   selector:
     matchLabels:
       app: interface-frontend
@@ -15,11 +21,12 @@ spec:
         app: interface-frontend
     spec:
       containers:
-      - name: interface-frontend
-        resources:
-          requests:
-            memory: "512Mi"
-            cpu: "500m"
-          limits:
-            memory: "2Gi"
-            cpu: "2"
+        - name: interface-frontend
+          resources:
+            requests:
+              memory: "512Mi"
+              cpu: "500m"
+            limits:
+              memory: "2Gi"
+              cpu: "2"
+
