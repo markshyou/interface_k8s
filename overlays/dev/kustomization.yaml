@@ -8,13 +8,13 @@ patchesStrategicMerge:
 images:
 - name: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/frontend-app
   newName: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/frontend-app
-  newTag: frontend-20230731223947-9e7beacf
+  newTag: frontend-20230731225213-9443a20c
 - name: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/order-app
   newName: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/order-app
-  newTag: order-20230731223948-9e7beacf
+  newTag: order-20230731225214-9443a20c
 - name: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/store-app
   newName: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/store-app
-  newTag: store-20230731223948-9e7beacf
+  newTag: store-20230731225214-9443a20c
 - name: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/user-app
   newName: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/user-app
-  newTag: user-20230731223948-9e7beacf
+  newTag: user-20230731225214-9443a20c
