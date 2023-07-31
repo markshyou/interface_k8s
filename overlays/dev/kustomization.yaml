@@ -7,5 +7,5 @@ images:
 resources:
 - ../../base
 patches:
-- patch: front-deployment-patch.yaml
-- patch: front-service-patch.yaml
+- patch: frontend-deployment-patch.yaml
+- patch: frontend-service-patch.yaml
