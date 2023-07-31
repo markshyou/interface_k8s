@@ -11,5 +11,5 @@ spec:
   type: NodePort
   ports:
     - port: 8080
-      targetPort: 9003
+      targetPort: 31002
       protocol: TCP

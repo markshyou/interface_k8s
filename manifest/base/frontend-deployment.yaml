@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: interface-frontend
-          image: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/interface-app:frontend-84b138bc
+          image: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/interface-app:frontend-808300ad
           imagePullPolicy: Always
           ports:
-            - containerPort: 9000
+            - containerPort: 31000

@@ -1,9 +1,12 @@
-apiVersion: v1
-kind: Service
-metadata:
-  name: interface-order
-  labels:
-    env: dev
-spec:
-  selector:
-    app: interface-order
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- order-deployment-patch.yaml
+- order-service-patch.yaml
+images:
+- name: ${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/order-app
+  newName: ${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/order-app
+  newTag: order-$(IMAGE_TAG)
+patchesStrategicMerge:
+- order-deployment-patch.yaml
+- order-service-patch.yaml

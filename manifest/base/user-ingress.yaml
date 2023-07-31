@@ -8,11 +8,11 @@ metadata:
     kubernetes.io/ingress.class: alb
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
-    alb.ingress.kubernetes.io/group.name: green
+    alb.ingress.kubernetes.io/group.name: apps
     alb.ingress.kubernetes.io/group.order: '3'
 spec:
   rules:
-  - http:
+    - http:
         paths:
           - path: /api/user
             pathType: Prefix

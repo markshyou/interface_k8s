@@ -1,8 +1,7 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- frontend-deployment-patch.yaml
-- frontend-service-patch.yaml
+- ../../../base
 images:
 - name: ${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/frontend-app
   newName: ${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/frontend-app
