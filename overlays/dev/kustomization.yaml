@@ -4,6 +4,18 @@ images:
 - name: ${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/interface-app
   newName: ${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/interface-app
   newTag: frontend-${IMAGE_TAG}
+- name: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/frontend-app
+  newName: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/frontend-app
+  newTag: frontend-041dc329
+- name: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/order-app
+  newName: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/order-app
+  newTag: order-041dc329
+- name: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/store-app
+  newName: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/store-app
+  newTag: store-041dc329
+- name: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/user-app
+  newName: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/user-app
+  newTag: user-041dc329
 resources:
 - ../../base
 patchesStrategicMerge:
