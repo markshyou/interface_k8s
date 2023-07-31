@@ -6,6 +6,6 @@ resources:
 images:
 - name: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/interface-app
   newTag: frontend-${IMAGE_TAG}
-patches:
-- frontend-deployment-patch.yaml
-- frontend-service-patch.yaml
+patchesStrategicMerge:
+- front-deployment-patch.yaml
+- front-service-patch.yaml
