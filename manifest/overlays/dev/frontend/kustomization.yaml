@@ -5,8 +5,8 @@ images:
   newName: ${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/frontend-808300ad
   newTag: abcdefg
 resources:
-- ../../base/frontend-deployment.yaml
-- ../../base/frontend-service.yaml
+- ../../../base/frontend-deployment.yaml
+- ../../../base/frontend-service.yaml
 patches:
 - target:
     kind: Deployment
