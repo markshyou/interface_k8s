@@ -5,7 +5,7 @@ metadata:
   namespace: default
   labels:
     env: dev
-spec:
+spec: 
   selector:
     matchLabels:
       app: interface-frontend
@@ -13,3 +13,6 @@ spec:
     metadata:
       labels:
         app: interface-frontend
+  containers:
+    - name: interface-frontend
+      image: ${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/interface-app:frontend-${IMAGE_TAG}
