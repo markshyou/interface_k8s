@@ -6,6 +6,6 @@ images:
 - name: ${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/order-app
   newName: ${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/order-app
   newTag: order-$(IMAGE_TAG)
-patchesStrategicMerge:
+patches:
 - order-deployment-patch.yaml
 - order-service-patch.yaml

@@ -6,6 +6,6 @@ images:
 - name: ${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/frontend-app
   newName: ${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/frontend-app
   newTag: frontend-$(IMAGE_TAG)
-patchesStrategicMerge:
+patches:
 - frontend-deployment-patch.yaml
 - frontend-service-patch.yaml

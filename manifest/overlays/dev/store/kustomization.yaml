@@ -6,6 +6,6 @@ images:
 - name: ${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/store-app
   newName: ${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/store-app
   newTag: store-$(IMAGE_TAG)
-patchesStrategicMerge:
+patches:
 - store-deployment-patch.yaml
 - store-service-patch.yaml

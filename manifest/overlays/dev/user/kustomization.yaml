@@ -6,6 +6,6 @@ images:
 - name: ${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/user-app
   newName: ${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/user-app
   newTag: user-$(IMAGE_TAG)
-patchesStrategicMerge:
+patches:
 - user-deployment-patch.yaml
 - user-service-patch.yaml
