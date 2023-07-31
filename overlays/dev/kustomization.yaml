@@ -6,6 +6,6 @@ images:
   newTag: frontend-${IMAGE_TAG}
 resources:
 - ../../base
-patches:
-- patch: frontend-deployment-patch.yaml
-- patch: frontend-service-patch.yaml
+patchesStrategicMerge:
+- frontend-deployment-patch.yaml
+- frontend-service-patch.yaml
