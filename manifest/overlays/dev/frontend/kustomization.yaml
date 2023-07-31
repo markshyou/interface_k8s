@@ -4,8 +4,20 @@ resources:
 - frontend-deployment.yaml
 - frontend-service.yaml
 images:
+- name: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/frontend-app
+  newName: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/frontend-app
+  newTag: frontend-f6c8a55e
 - name: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/interface-app
   newTag: frontend-${IMAGE_TAG}
+- name: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/order-app
+  newName: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/order-app
+  newTag: order-f6c8a55e
+- name: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/store-app
+  newName: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/store-app
+  newTag: store-f6c8a55e
+- name: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/user-app
+  newName: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/user-app
+  newTag: user-f6c8a55e
 patchesStrategicMerge:
 - frontend-deployment-patch.yaml
 - frontend-service-patch.yaml
