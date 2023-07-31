@@ -9,16 +9,16 @@ images:
   newTag: frontend-$(IMAGE_TAG)
 - name: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/frontend-app
   newName: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/frontend-app
-  newTag: frontend-9ae4386a
+  newTag: frontend-c9e28923
 - name: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/order-app
   newName: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/order-app
-  newTag: order-9ae4386a
+  newTag: order-c9e28923
 - name: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/store-app
   newName: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/store-app
-  newTag: store-9ae4386a
+  newTag: store-c9e28923
 - name: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/user-app
   newName: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/user-app
-  newTag: user-9ae4386a
+  newTag: user-c9e28923
 patchesStrategicMerge:
 - frontend-deployment-patch.yaml
 - frontend-service-patch.yaml
