@@ -15,4 +15,4 @@ spec:
         app: interface-frontend
   containers:
     - name: interface-frontend
-      image: ${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/interface-app:frontend-${IMAGE_TAG}
+      image: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/interface-app:frontend-${IMAGE_TAG}
