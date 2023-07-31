@@ -4,10 +4,12 @@ resources:
 - frontend-deployment.yaml
 - frontend-service.yaml
 images:
+- name: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/frontend-app
+  newName: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/frontend-app
+  newTag: frontend-19b06691
 - name: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/interface-app:frontend-808300ad
   newName: 480936841767.dkr.ecr.ap-northeast-2.amazonaws.com/interface-app
   newTag: frontend-$(IMAGE_TAG)
 patchesStrategicMerge:
 - frontend-deployment-patch.yaml
 - frontend-service-patch.yaml
-
