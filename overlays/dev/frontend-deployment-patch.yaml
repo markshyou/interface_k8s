@@ -13,14 +13,13 @@ spec:
     metadata:
       labels:
         app: interface-frontend
-    spec:  # <-- 여기서 수정
+    spec:
       containers:
       - name: interface-frontend
         resources:
           requests:
             memory: "512Mi"
-            cpu: "500m"  # <-- 소문자 'm'으로 수정 (Megabytes)
+            cpu: "500m"
           limits:
             memory: "2Gi"
             cpu: "2"
-
