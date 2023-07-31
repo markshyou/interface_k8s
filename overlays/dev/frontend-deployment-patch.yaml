@@ -13,3 +13,13 @@ spec:
     metadata:
       labels:
         app: interface-frontend
+    sepc:
+      containers:
+      - name: interface-frontend
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "500M"
+          limits:
+            memory: "2Gi"
+            cpu: "2"
