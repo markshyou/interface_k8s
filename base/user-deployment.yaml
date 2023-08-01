@@ -5,7 +5,7 @@ metadata:
   name: interface-user
   namespace: default
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: interface-user
